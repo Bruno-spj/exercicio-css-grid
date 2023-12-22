@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container{
+    padding: 35px;
+    background-color: #F7F7F7;
+    max-width: 900px;
+    height: 415px;
+    display: grid;
+    grid-template-areas: "video-destaque propaganda" 
+                         "video-destaque opcoes-video";
+                        
+    grid-template-columns: 1fr 270px; 
+    grid-template-rows: 56px 1fr;       
+    grid-gap: 15px;             
+}
+
+.video-destaque{
+    
+    grid-area: video-destaque;
+}
+
+.informacoes .titulo-destaque h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 10px 0 5px 0;
+}
+
+.informacoes .visualizacao{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.informacoes .descricao-video-destaque{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+
+.propaganda{
+   
+    grid-area: propaganda;
+}
+
+.opcoes-video{
+    
+    grid-area: opcoes-video;
+}
+
+.opcoes-video .video{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+
+.informacoes-video h2{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    
+}
+
+.informacoes-video p{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    margin-top: 5px;
+}
